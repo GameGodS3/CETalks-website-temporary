@@ -84,6 +84,7 @@ img {
 }
 #header div ul li a:hover {
 	color: #c9cc00;
+	transition: all .5s;
 }
 #header div ul li ul {
 	display: none;
@@ -113,7 +114,7 @@ img {
 	background: none;
 	margin: 0 auto;
 	max-width: 960px;
-	padding: 74px 0 0;
+	padding: 40px 0 0;
 }
 #body.home div.header div h1 {
 	background: none;
@@ -123,7 +124,7 @@ img {
 	font-size: 110px;
 	font-weight: normal;
 	line-height: 96px;
-	margin: 0 auto 32px;
+	margin: 0 auto 20px;
 	padding: 0;
 	text-align: center;
 	text-transform: none;
@@ -133,10 +134,10 @@ img {
 	background: none;
 	color: #000000;
 	display: block;
-	font-family:'Lucida Sans';
-	font-size: 50px;
+	font-family: monospace;
+	font-size: 40px;
 	font-weight: normal;
-	line-height: 96px;
+	line-height: 60px;
 	margin: 0 auto 32px;
 	padding: 0;
 	text-align: center;
@@ -243,6 +244,7 @@ img {
 }
 #body.home div.body div a.more {
 	border: 5px solid #FFFFFF;
+	border-radius: 10px;
 	color: #FFFFFF;
 	display: block;
 	font-family: 'Arial Black';
@@ -259,6 +261,7 @@ img {
 #body.home div.body div a.more:hover {
 	background-color: #ffffff;
 	color: #d30000;
+	transition: all .5s;
 }
 /*----------------------------------------body-styles---------------------------------------*/
 #body div {
@@ -706,49 +709,52 @@ img {
 #body.blogsinglepost div div p a:hover {
 	color: #fc416f;
 }
-#playbutton .button a
+/*-----------------home-page Play Button--------------------------------------*/
+body div#page div.home div.header div#playbutton input.playradio+.label
 {
-	background: url(../images/playbutton.png) no-repeat;
-	background-position: 0 0;
-	display: block;
-	float: center;
-	height: 350px;
-	margin-left:auto;
-	margin-right: auto;
-	padding-left: 50;
-	padding-right: 50;
-	text-indent: 0px;
-	width: 350px;
-}
-#playbutton .button a:hover{
-	background-position: 0 -350px;
-}
-#playbutton .button a:active{
-	/*transition: 100ms all ease;
-	cursor: pointer;*/
-	background: url(../images/playbutton.png);
-}
-#playbutton .button b
-{
-	background: url(../images/pause.png) no-repeat;
-	background-position: 0 0;
-	display: block;
-	float: center;
-	height: 99px;
 	margin-left: auto;
 	margin-right: auto;
-	padding-left: 50;
-	padding-right: 50;
-	text-indent: 0px;
-	width: 99px;
 }
-#playbutton .button b:hover{
-	background-position: 0 -99px;
+body div#page div.home div.header div#playbutton input.playradio+.label img.play
+{
+	max-height: 250px;
+	width: auto;
+	border: 3px transparent solid;
+	border-radius: 40%;
 }
-#playbutton .button b:active{
-	/*transition: 100ms all ease;
-	cursor: pointer;*/
-	background: url(../images/pause.png);
+body div#page div.home div.header div#playbutton input.playradio:hover+.label img.play
+{
+	border: 3px #c9cc00 dashed;
+	border-radius: 50%;
+	transition: all .5s;
+}
+body div#page div.home div.header div#playbutton input.playradio:checked+.label img.play
+{
+	display: none;
+	transition: all .5s;
+}
+body div#page div.home div.header div#playbutton input.pauseradio+.label
+{
+	margin-left: auto;
+	margin-right: auto;
+}
+body div#page div.home div.header div#playbutton input.pauseradio+.label img.pause
+{
+	max-height: 250px;
+	width: auto;
+	border: 3px transparent solid;
+	border-radius: 40%;
+}
+body div#page div.home div.header div#playbutton input.pauseradio:hover+.label img.pause
+{
+	border: 3px #c9cc00 dashed;
+	border-radius: 50%;
+	transition: all .5s;
+}
+body div#page div.home div.header div#playbutton input.pauseradio:checked+.label img.pause
+{
+	display: none;
+	transition: all .5s;
 }
 /*----------------------------------------footer-styles---------------------------------------*/
 #footer {
