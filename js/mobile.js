@@ -9,6 +9,7 @@ window.onload = function(){
 				} else {
 					getNavi.style.display='block';
 					document.getElementById('mobile-navigation').style.backgroundImage='url(images/mobile/mobile-close.png)';
+					document.getElementById('mobile-navigation').style.transition='all .25s';
 				}
 			};
 			var getElm = getNavi.getElementsByTagName("LI");
