@@ -95,7 +95,9 @@ img {
 /*----------------------------------------body-home-styles---------------------------------------*/
 #body {
 	background: url(../images/mixerbg.jpg) no-repeat center top;
-	background-position: center;
+	background-position: bottom;
+	background-attachment: fixed;
+	background-size: 150%;
 	border-top: 2px solid #252525;
 	margin: 0;
 	overflow: hidden;
@@ -129,6 +131,7 @@ img {
 	text-align: center;
 	text-transform: none;
 	width: 89.5833%;
+	text-shadow: black 2px 2px 15px;
 }
 #body.home div.header div h2 {
 	background: none;
@@ -288,7 +291,7 @@ img {
 }
 #body div img {
 	display: block;
-	margin: 68px auto 47px;
+	margin: 1px auto 47px;
 	padding: 0;
 	width: auto;
 }
@@ -492,6 +495,7 @@ img {
 }
 #body div ul li div a.more {
 	border: 2px solid #FFFFFF;
+	border-radius: 6px;
 	color: #FFFFFF;
 	display: block;
 	float: left;
@@ -626,89 +630,31 @@ img {
 	height: 43px;
 	width: 143px;
 }
-#body.blogsinglepost div img {
-	display: block;
-	float: center;
-	margin-left:auto;
-	margin-right: auto;
-	padding: 0;
-	width: auto;
-}
-#body.blogsinglepost div div {
+#body.rjpage div div
+{
 	background: none;
-	float: left;
-	margin: 76px 0 0;
-	max-width: none;
-	padding: 0 0 349px;
-	width: 522px;
 }
-#body.blogsinglepost div h2 {
-	background: none;
-	color: #FFFFFF;
-	font-family: "Arial Black";
-	font-size: 30px;
-	font-weight: bold;
-	letter-spacing: 0.03em;
-	line-height: 25px;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 0;
-	text-align: center;
-	text-transform: uppercase;
+#body.rjpage div div img.slides
+{
+	max-width: 35%;
+	display: none;
 }
-#body.blogsinglepost div h3 {
-	background: none;
-	color: #ac0000;
-	font-family: "Arial Black";
-	font-size: 20px;
-	font-weight: bold;
-	letter-spacing: 0.03em;
-	line-height: 25px;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 0;
-	text-align: center;
-	text-transform: uppercase;
+#body.rjpage div div button.slidecontrol
+{
+	height: 50px;
+	width: 50px;
+	display: inline-block;
+	outline: none;
+	background: #ff9430;
+	border-radius: 20%;
+	border: 1px;
 }
-#body.blogsinglepost div div h1 {
-	background: none;
-	color: #FFFFFF;
-	font-family: Arial;
-	font-size: 25px;
-	font-weight: bold;
-	letter-spacing: 0.03em;
-	line-height: 25px;
-	margin: 0 0 13px;
-	padding: 0;
-	text-align: left;
-	text-transform: uppercase;
+#body.rjpage div div button.slidecontrol:hover
+{
+	background: #9c5c27;
+	transition: all .5s;
 }
 
-#body.blogsinglepost div div p {
-	color: #FFFFFF;
-	font-family: Arial;
-	font-size: 16px;
-	font-weight: normal;
-	letter-spacing: 0.01em;
-	line-height: 48px;
-	margin: 0 0 48px;
-	padding: 0;
-	text-align: left;
-	width: auto;
-}
-#body.blogsinglepost div div p a {
-	color: #ffffff;
-	font-family: Arial;
-	font-size: 16px;
-	font-weight: normal;
-	line-height: 48px;
-	margin: 0;
-	padding: 0;
-	text-decoration: underline;
-}
-#body.blogsinglepost div div p a:hover {
-	color: #fc416f;
-}
 /*-----------------home-page Play Button--------------------------------------*/
 body div#page div.home div.header div#playbutton input.playradio+.label
 {

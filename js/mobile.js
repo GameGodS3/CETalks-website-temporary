@@ -31,7 +31,7 @@ window.onload = function(){
 				} else {
 					sub.style.display='block';
 					getElm[i].lastChild.style.backgroundImage='url(images/mobile/mobile-collapse.png)';
-					getElm[i].lastChild.style.backgroundColor='rgba(248, 98, 130, 0.8)';
+					getElm[i].lastChild.style.backgroundColor='#bb0404ab';
 				}
 			};
 		};
