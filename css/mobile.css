@@ -168,6 +168,12 @@ img {
 	padding: 0;
 	width: 100%;
 }
+body div#page div.home div.equalizer 
+{
+	margin: 0; 
+	padding: 0%; 
+	display: inline;
+}
 #body div {
 	margin: 0 auto;
 	padding: 10% 0 0 0;

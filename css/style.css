@@ -702,6 +702,13 @@ body div#page div.home div.header div#playbutton input.pauseradio:checked+.label
 	display: none;
 	transition: all .5s;
 }
+/*-----------------------------Equalizer-styles-----------------------------------------------*/
+body div#page div.home div.equalizer 
+{
+	margin: 0 25%; 
+	padding: 0%; 
+	display: inline;
+}
 /*----------------------------------------footer-styles---------------------------------------*/
 #footer {
 	background-color: #111111;
