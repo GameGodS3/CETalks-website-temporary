@@ -35,13 +35,10 @@ img {
 }
 #header div a.logo {
 	display: block;
-    float: middle;
+	float: left;
 	height: 106px;
 	align-self: center;
-	/*margin: 44px 0 0;*/
-	margin-top: 44px;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 30px 0 0 -50px;
     padding: 0;
     width: 320px;
 }
@@ -53,7 +50,7 @@ img {
 }
 #header div ul {
 	display: block;
-    float: middle;
+    float: right;
     list-style: none outside none;
     margin: 0 auto;
     max-width: 501px;
@@ -366,34 +363,7 @@ img {
 	text-align: center;
 	text-transform: none;
 }
-#body div ul.gallery {
-	display: inline-block;
-	list-style: none outside none;
-	margin: 0 0 76px;
-	max-width: none;
-	padding: 72px 0 0;
-	width: 100%;
-}
-#body div ul.gallery li {
-	border: none;
-	float: left;
-	margin: 0 10px;
-	padding: 0;
-	width: 300px;
-}
-#body div ul.gallery li a {
-	display: block;
-	margin: 0;
-	padding: 0;
-	width: auto;
-}
-#body div ul.gallery li a img {
-	display: block;
-	float: none;
-	margin: 0 auto;
-	padding: 0;
-	width: auto;
-}
+
 #body div h3 {
 	background: url(../images/bg-border1.gif) no-repeat center top;
 	color: #FFFFFF;
@@ -457,10 +427,11 @@ img {
 }
 #body div ul li div h1 {
 	background: none;
-	color: #FFFFFF;
-	font-family: Arial;
-	font-size: 25px;
-	font-weight: normal;
+	color: #ffffff;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 32px;
+	font-weight: bold;
+	font-style: italic;
 	line-height: 30px;
 	margin: 0 0 16px;
 	padding: 0;
@@ -474,7 +445,7 @@ img {
 	font-size: 16px;
 	font-weight: normal;
 	letter-spacing: 0.01em;
-	line-height: 48px;
+	line-height: 28px;
 	margin: 0 0 6px;
 	padding: 0;
 	text-align: left;
@@ -491,7 +462,7 @@ img {
 	text-decoration: underline;
 }
 #body div ul li div p a:hover {
-	color: #fc416f;
+	color: #dd0505;
 }
 #body div ul li div a.more {
 	border: 2px solid #FFFFFF;
@@ -511,11 +482,12 @@ img {
 	width: 136px;
 }
 #body div ul li div a.more:hover {
-	background-color: #fc416f;
+	background-image: linear-gradient(to bottom right, #dd0505, #d19833);
 	border: none;
 	height: 38px;
 	line-height: 38px;
 	width: 140px;
+	font-weight: bold;
 }
 #body.contact div img {
 	display: block;
@@ -630,6 +602,43 @@ img {
 	height: 43px;
 	width: 143px;
 }
+#body.team div table{
+	width: 100%;
+	text-align: center;
+	padding: 0 10px;
+}
+#body.team div table td{
+	width: 50%;
+}
+#body.team div table tr td a{
+	text-decoration: none;
+	color: white;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: bold;
+	font-size: 36px;
+	
+}
+#body.team div table tr td a h6{
+	text-decoration: none;
+	color: white;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	margin: 5px auto;
+	
+}
+#body.team div table tr td a img{
+	max-width: 250px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0;
+}
+#body.team div table tr td a:hover img{
+	max-width: 230px;
+	height: auto;
+	transition: all .25s;
+}
 #body.rjpage div div
 {
 	background: none;
@@ -668,7 +677,7 @@ body div#page div.home div.header div#playbutton input.playradio+.label img.play
 	border: 3px transparent solid;
 	border-radius: 40%;
 }
-body div#page div.home div.header div#playbutton input.playradio:hover+.label img.play
+body div#page div.home div.header div#playbutton input.playradio+.label img.play:hover
 {
 	border: 3px #c9cc00 dashed;
 	border-radius: 50%;
@@ -691,7 +700,7 @@ body div#page div.home div.header div#playbutton input.pauseradio+.label img.pau
 	border: 3px transparent solid;
 	border-radius: 40%;
 }
-body div#page div.home div.header div#playbutton input.pauseradio:hover+.label img.pause
+body div#page div.home div.header div#playbutton input.pauseradio+.label img.pause:hover
 {
 	border: 3px #c9cc00 dashed;
 	border-radius: 50%;
@@ -701,6 +710,13 @@ body div#page div.home div.header div#playbutton input.pauseradio:checked+.label
 {
 	display: none;
 	transition: all .5s;
+}
+/*-----------------------------Equalizer-styles-----------------------------------------------*/
+body div#page div.home div.equalizer 
+{
+	margin: 0 25%; 
+	padding: 0%; 
+	display: inline;
 }
 /*----------------------------------------footer-styles---------------------------------------*/
 #footer {

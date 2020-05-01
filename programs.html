@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>CETalks</title>
+	<title>Programs - CETalks</title>
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 	<link rel="stylesheet" type="text/css" href="css/mobile.css">
 	<link rel="icon" href="images/favicon.png" type="image/png">
@@ -16,13 +16,13 @@
 				<span id="mobile-navigation">&nbsp;</span>
 				<a href="index.html" class="logo"><img src="images/cetalkslogo.png" alt=""></a>
 				<ul id="menu">
-					<li class="selected">
+					<li>
 						<a href="index.html">Home</a>
 					</li>
 					<li>
 						<a href="comingsoon.html">About</a>
 					</li>
-					<li>
+					<li class="selected">
 						<a href="programs.html">Programs</a>
 						<ul>
 							<li>
@@ -59,33 +59,20 @@
 				</ul>
 			</div>
 		</div>
-		<div id="body" class="home">
-			<div class="header">
-				<div>
-					<h1 style="color: white;">CETalks</h1>
-					<h2 style="color: #c9c9c9;">Turn on Tune in</h2>
-				<audio id="stream" src="https://streaming.radio.co/s8c7294f48/listen"></audio>
-				<!--audio id="stream" src="audio-visualizer-with-controls-gh-pages/song.mp3" controls></audio-->
-				<div id="playbutton">
-					<input type="radio" id="play" class="playradio" name="media" onclick="document.getElementById('stream').play();" style="display: none;">
-						<label for="play" class="label">
-							<img src="images/playbutton.png" class="play" alt="">
-						</label>
-					</input>
-					<input type="radio" id="pause" class="pauseradio" name="media" checked onclick="document.getElementById('stream').pause();" style="display: none;">
-						<label for="pause" class="label">
-							<img src="images/pause.png" class="pause" alt="">
-						</label>
-					</input>
-				</div>
-				</div>
-			</div>
-			<div class="body">
-				<div>
-					<h1>LISTEN LIVE NOW</h1>
-					<p>CET's stories, gossips, voice and vibes from the craziest mouths.</p>
-					<a href="team.html" class="more">The Team</a>
-				</div>
+		<div id="body">
+			<div>
+				<h1>Programs</h1>
+				<ul>
+					<li>
+						<img src="images/placeholder.png" alt="">
+						<div>
+							<h1>BORENTINE</h1>
+							<p>Quarantine special content with our vibrant RJs.</p>
+							<br>
+							<a href="programborentine.html" class="more">know more</a>
+						</div>
+					</li>
+				</ul>
 			</div>
 		</div>
 		<div id="footer">
