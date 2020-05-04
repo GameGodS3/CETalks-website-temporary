@@ -28,10 +28,11 @@ img {
 	position: absolute;
 	top: 0;
 	left: 0;
-	background-color: #000000;
+	background-color: #111111;
 	display:flex;
 	justify-content: center;
 	align-items: center;
+	z-index: 2;
   }
   .loader {
 	display: inline-block;
