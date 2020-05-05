@@ -35,22 +35,22 @@
 						<a href="team.html">The Team</a>
 						<ul>
 							<li>
-								<a href="comingsoon.html">Core Panel</a>
+								<a href="teamcorepanel.html">Core Panel</a>
 							</li>
 							<li>
-								<a href="comingsoon.html">Sub Panel</a>
+								<a href="teamsubpanel.html">Sub Panel</a>
 							</li>
 							<li>
-								<a href="comingsoon.html">RJs</a>
+								<a href="teamrj.html">RJs</a>
 							</li>
 							<li>
-								<a href="comingsoon.html">Program Team</a>
+								<a href="teamprogram.html">Program Team</a>
 							</li>
 							<li>
-								<a href="comingsoon.html">Tech Team</a>
+								<a href="teamtech.html">Tech Team</a>
 							</li>
 							<li>
-								<a href="comingsoon.html">Design Team</a>
+								<a href="teamdesign.html">Design Team</a>
 							</li>
 						</ul>
 					</li>
@@ -86,16 +86,116 @@
                 background: none;
                 padding: 0 10px;
             }
-            #body.borentine div div.links img{
-                max-width: 150px;
-                display: inline;
-                position: relative;
-                transition: max-width .5s;
-            }
-            #body.borentine div div.links img:hover{
-                max-width: 170px;
-                transition: all .5s;
-            }
+			#body.borentine div div.links input{
+				display: none;
+			}
+			#body.borentine div div.links label.episode1{
+				background: url(./images/borentine/1.jpg) no-repeat;
+				background-size: contain;
+				display: inline-block;
+				width: 130px;
+				height: 162.5px;	
+				transition: all .5s;
+			}
+			#body.borentine div div.links label.episode2{
+				background: url(./images/borentine/2.jpg) no-repeat;
+				background-size: contain;
+				display: inline-block;
+				width: 130px;
+				height: 162.5px;
+				transition: all .5s;
+			}
+			#body.borentine div div.links label.episode3{
+				background: url(./images/borentine/3.jpg) no-repeat;
+				background-size: contain;
+				display: inline-block;
+				width: 130px;
+				height: 162.5px;
+				transition: all .5s;
+			}
+			#body.borentine div div.links label.episode4{
+				background: url(./images/borentine/4.jpg) no-repeat;
+				background-size: contain;
+				display: inline-block;
+				width: 130px;
+				height: 162.5px;
+				transition: all .5s;
+			}
+			#body.borentine div div.links label.episode5{
+				background: url(./images/borentine/5.jpg) no-repeat;
+				background-size: contain;
+				display: inline-block;
+				width: 130px;
+				height: 162.5px;
+				transition: all .5s;
+			}
+			#body.borentine div div.links label.episode6{
+				background: url(./images/borentine/6.jpg) no-repeat;
+				background-size: contain;
+				display: inline-block;
+				width: 130px;
+				height: 162.5px;
+				transition: all .5s;
+			}
+			#body.borentine div div.links label:hover{
+				width: 160px;
+				height: 200px;
+				transition: all .5s;
+			}	
+			#body.borentine div div.links label h4{
+				opacity: 0;
+				padding-top: 40%;
+				color: white;
+				font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+				text-shadow: 3px 3px 4px black;
+				font-size: 20px;
+				transition: all .5s;
+			}
+			#body.borentine div div.links input:checked + label{
+				width: 160px;
+				height: 200px;
+				background-size: 120%;
+				background-position: center;
+				opacity: .8;
+				transition: all .5s;
+			}
+			#body.borentine div div.links input:checked + label h4{
+				opacity: 1;
+				transition: all .5s;
+			}
+			#body.borentine div div.links iframe.player{
+				display: none;
+			}
+			#body.borentine div div.links input#ep1:checked ~ iframe#player1{
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			#body.borentine div div.links input#ep2:checked ~ iframe#player2{
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			#body.borentine div div.links input#ep3:checked ~ iframe#player3{
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			#body.borentine div div.links input#ep4:checked ~ iframe#player4{
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			#body.borentine div div.links input#ep5:checked ~ iframe#player5{
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			#body.borentine div div.links input#ep6:checked ~ iframe#player6{
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+			}
         </style>
 		<div id="body" class="borentine">
 			<div>
@@ -109,14 +209,35 @@
                 </div>
                 <br>
                 <div class="links">
-                <a href="http://www.youtube.com/watch?v=Ab_jMQ0HBIg"><img src="images/borentine/1.jpg" alt=""></a>
-                <a href="http://www.youtube.com/watch?v=_fnntoGk2to"><img src="images/borentine/2.jpg" alt=""></a>
-                <a href="http://www.youtube.com/watch?v=YPe7KmMurQ8"><img src="images/borentine/3.jpg" alt=""></a>
-                <a href="http://www.youtube.com/watch?v=3CvChdPE9yA"><img src="images/borentine/4.jpg" alt=""></a>
-                <a href="http://www.youtube.com/watch?v=PO57gcoNiFA"><img src="images/borentine/5.jpg" alt=""></a>
-                <a href="http://www.youtube.com/watch?v=bHxWaBG17rU"><img src="images/borentine/6.jpg" alt=""></a>
-                </div>
-                
+					<input type="radio" id="ep1" name="borentine" onclick="document.getElementById('footer').scrollIntoView;"><label for="ep1" class="episode1"><h4>Now Playing</h4></label>
+					<input type="radio" id="ep2" name="borentine" onclick="document.getElementById('footer').scrollIntoView;"><label for="ep2" class="episode2"><h4>Now Playing</h4></label>
+					<input type="radio" id="ep3" name="borentine" onclick="document.getElementById('footer').scrollIntoView;"><label for="ep3" class="episode3"><h4>Now Playing</h4></label>
+					<input type="radio" id="ep4" name="borentine" onclick="document.getElementById('footer').scrollIntoView;"><label for="ep4" class="episode4"><h4>Now Playing</h4></label>
+					<input type="radio" id="ep5" name="borentine" onclick="document.getElementById('footer').scrollIntoView;"><label for="ep5" class="episode5"><h4>Now Playing</h4></label>
+					<input type="radio" id="ep6" name="borentine" onclick="document.getElementById('footer').scrollIntoView;"><label for="ep6" class="episode6"><h4>Now Playing</h4></label>
+					<br><br>
+					<iframe id="player1" src="https://anchor.fm/cetalksradio/embed/episodes/BORENTINE--Episode-1--RJ-Ann--CETALKS--College-Of-Engineering-Trivandrum-ed7s7s/a-a219ngk" class="player" height="102px" max-width="400px" frameborder="0" scrolling="no"></iframe>
+					<iframe id="player2" src="https://anchor.fm/cetalksradio/embed/episodes/BORENTINE--Episode-2--RJ-Anver--CETALKS--College-Of-Engineering-Trivandrum-ed7sfd/a-a219p33" class="player" height="102px" max-width="400px" frameborder="0" scrolling="no"></iframe>
+					<iframe id="player3" src="https://anchor.fm/cetalksradio/embed/episodes/BORENTINE--Episode-3--RJ-Ankitha--CETALKS--College-Of-Engineering-Trivandrum-ed7v93/a-a21aa56" class="player" height="102px" max-width="400px" frameborder="0" scrolling="no"></iframe>
+					<iframe id="player4" src="https://anchor.fm/cetalksradio/embed/episodes/BORENTINE--Episode-4--RJ-Sezna--CETALKS--College-Of-Engineering-Trivandrum-ed7vat/a-a21aaj4" class="player" height="102px" max-width="400px" frameborder="0" scrolling="no"></iframe>
+					<iframe id="player5" src="https://anchor.fm/cetalksradio/embed/episodes/BORENTINE--Episode-5--RJ-Keerthana--CETALKS--College-Of-Engineering-Trivandrum-ed88i2/a-a21c5hh" class="player" height="102px" max-width="400px" frameborder="0" scrolling="no"></iframe>
+					<iframe id="player6" src="https://anchor.fm/cetalksradio/embed/episodes/BORENTINE--Episode-6--RJ-Akshay--CETALKS--College-Of-Engineering-Trivandrum-ed88pr/a-a21c77s" class="player" height="102px" max-width="400px" frameborder="0" scrolling="no"></iframe>
+				</div>
+                <!--script>
+					function chbx(obj)
+					{
+						var that = obj;
+						if (document.getElementById(that.id).checked == true) {
+							document.getElementById('ep1').checked = false;
+							document.getElementById('ep2').checked = false;
+							document.getElementById('ep3').checked = false;
+							document.getElementById('ep4').checked = false;
+							document.getElementById('ep5').checked = false;
+							document.getElementById('ep6').checked = false;
+							document.getElementById(that.id).checked = true;
+						}
+					}
+				</script-->
             </div>
 		</div>
 		<div id="footer">
