@@ -29,7 +29,7 @@ img {
 	top: 0;
 	left: 0;
 	background-color: #111111;
-	display:flex;
+	display:none;
 	justify-content: center;
 	align-items: center;
   }
@@ -134,7 +134,7 @@ img {
 }
 /*----------------------------------------body-home-styles---------------------------------------*/
 #body {
-	background: url(../images/mixerbg.jpg) no-repeat center top;
+	background: url(../images/covidwall.jpg) no-repeat center top;
 	background-position: bottom;
 	background-attachment: fixed;
 	background-size: 150%;
@@ -755,12 +755,21 @@ body div#page div.home div.header div#playbutton input.pauseradio:checked+.label
 	transition: all .5s;
 }
 /*-----------------------------Equalizer-styles-----------------------------------------------*/
+@media only screen and (min-width: 568px){
 body div#page div.home div.equalizer 
 {
 	margin: 0 25%; 
 	padding: 0%; 
 	display: inline;
 }
+}
+@media only screen and (max-width: 568px){
+body div#page div.home div.equalizer
+{
+	margin: 0 0 -16% 0;
+}
+}
+
 /*----------------------------------------footer-styles---------------------------------------*/
 #footer {
 	background-color: #111111;
