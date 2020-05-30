@@ -135,16 +135,23 @@ img {
 }
 /*----------------------------------------body-home-styles---------------------------------------*/
 #body {
-	background: url(../images/mixerbg.jpg) no-repeat center top;
-	background-position: bottom;
+	background: url(../images/clothbg.png) no-repeat center center;
+	background-position: top;
 	background-attachment: fixed;
-	background-size: 150%;
+	background-size: cover;
+	background-color: #8f0f1f;
 	border-top: 2px solid #252525;
 	margin: 0;
 	overflow: hidden;
 	padding: 0;
 	position: relative;
 	width: 100%;
+}
+@media only screen and (max-width: 767px){
+	#body
+	{
+		background: url(../images/clothbglow.png) no-repeat center center;
+	}
 }
 #body.home div {
 	background: none;
@@ -323,8 +330,8 @@ img {
 	padding: 58px 0 161px;
 }
 #body div h1 {
-	background: url(../images/bg-border2.gif) no-repeat center bottom;
-	color: #FC416F;
+	background: url(../images/bg-border2.png) no-repeat center bottom;
+	color: #e87b0f;
 	font-family: 'Arial Black';
 	font-size: 40px;
 	font-weight: normal;

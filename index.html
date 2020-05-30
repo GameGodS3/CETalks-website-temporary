@@ -39,22 +39,22 @@
 						<a href="team.html">The Team</a>
 						<ul>
 							<li>
-								<a href="comingsoon.html">Core Panel</a>
+								<a href="teamcorepanel.html">Core Panel</a>
 							</li>
 							<li>
-								<a href="comingsoon.html">Sub Panel</a>
+								<a href="teamsubpanel.html">Sub Panel</a>
 							</li>
 							<li>
-								<a href="comingsoon.html">RJs</a>
+								<a href="teamrj.html">RJs</a>
 							</li>
 							<li>
-								<a href="comingsoon.html">Program Team</a>
+								<a href="teamprogram.html">Program Team</a>
 							</li>
 							<li>
-								<a href="comingsoon.html">Tech Team</a>
+								<a href="teamtech.html">Tech Team</a>
 							</li>
 							<li>
-								<a href="comingsoon.html">Design Team</a>
+								<a href="teamdesign.html">Design Team</a>
 							</li>
 						</ul>
 					</li>
@@ -67,12 +67,11 @@
 		<div id="body" class="home">
 			<div class="header">
 				<div>
-					<h1 style="color: white;">CETalks</h1>
+					<h1 style="color: white;" id="cetalks">CETalks</h1>
 					<h2 style="color: #c9c9c9;">Turn on Tune in</h2>
 				<audio id="stream" src="https://streaming.radio.co/s8c7294f48/listen"></audio>
-				<!--audio id="stream" src="audio-visualizer-with-controls-gh-pages/song.mp3"></audio-->
 				<div id="playbutton">
-					<input type="radio" id="play" class="playradio" name="media" onclick="document.getElementById('stream').play();" style="display: none;">
+				<input type="radio" id="play" class="playradio" name="media" onclick="document.getElementById('stream').play(); document.getElementById('cetalks').scrollIntoView({behavior:'smooth'})" style="display: none;">
 						<label for="play" class="label">
 							<img src="images/playbutton.png" class="play" alt="">
 						</label>

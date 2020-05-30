@@ -92,7 +92,9 @@
 			#body.borentine div div.links label.episode1{
 				background: url(./images/borentine/1.jpg) no-repeat;
 				background-size: contain;
-				display: inline-block;
+				display: inline-flex;
+				margin: 0px 2px;
+				flex-direction: column;
 				width: 130px;
 				height: 162.5px;	
 				transition: all .5s;
@@ -100,7 +102,9 @@
 			#body.borentine div div.links label.episode2{
 				background: url(./images/borentine/2.jpg) no-repeat;
 				background-size: contain;
-				display: inline-block;
+				display: inline-flex;
+				margin: 0px 2px;
+				flex-direction: column;
 				width: 130px;
 				height: 162.5px;
 				transition: all .5s;
@@ -108,7 +112,9 @@
 			#body.borentine div div.links label.episode3{
 				background: url(./images/borentine/3.jpg) no-repeat;
 				background-size: contain;
-				display: inline-block;
+				display: inline-flex;
+				margin: 0px 2px;
+				flex-direction: column;
 				width: 130px;
 				height: 162.5px;
 				transition: all .5s;
@@ -116,7 +122,9 @@
 			#body.borentine div div.links label.episode4{
 				background: url(./images/borentine/4.jpg) no-repeat;
 				background-size: contain;
-				display: inline-block;
+				display: inline-flex;
+				margin: 0px 2px;
+				flex-direction: column;
 				width: 130px;
 				height: 162.5px;
 				transition: all .5s;
@@ -124,7 +132,9 @@
 			#body.borentine div div.links label.episode5{
 				background: url(./images/borentine/5.jpg) no-repeat;
 				background-size: contain;
-				display: inline-block;
+				display: inline-flex;
+				margin: 0px 2px;
+				flex-direction: column;
 				width: 130px;
 				height: 162.5px;
 				transition: all .5s;
@@ -132,16 +142,27 @@
 			#body.borentine div div.links label.episode6{
 				background: url(./images/borentine/6.jpg) no-repeat;
 				background-size: contain;
-				display: inline-block;
+				display: inline-flex;
+				margin: 0px 2px;
+				flex-direction: column;
 				width: 130px;
 				height: 162.5px;
 				transition: all .5s;
 			}
-			#body.borentine div div.links label:hover{
-				width: 160px;
-				height: 200px;
+			@media only screen and (min-width: 568px){ 
+				#body.borentine div div.links{
+					display: inline;
+				}
+				
+				#body.borentine div div.links label:hover{
+				transform: scale(1.3);
 				transition: all .5s;
-			}	
+				opacity: .9;
+				box-shadow: 1px 1px 50px black;
+				}
+
+		
+			}
 			#body.borentine div div.links label h4{
 				opacity: 0;
 				padding-top: 40%;
@@ -152,11 +173,9 @@
 				transition: all .5s;
 			}
 			#body.borentine div div.links input:checked + label{
-				width: 160px;
-				height: 200px;
+				transform: scale(1.2);
 				background-size: 120%;
 				background-position: center;
-				opacity: .8;
 				transition: all .5s;
 			}
 			#body.borentine div div.links input:checked + label h4{
@@ -209,12 +228,12 @@
                 </div>
                 <br>
                 <div class="links">
-					<input type="radio" id="ep1" name="borentine" onclick="document.getElementById('footer').scrollIntoView;"><label for="ep1" class="episode1"><h4>Now Playing</h4></label>
-					<input type="radio" id="ep2" name="borentine" onclick="document.getElementById('footer').scrollIntoView;"><label for="ep2" class="episode2"><h4>Now Playing</h4></label>
-					<input type="radio" id="ep3" name="borentine" onclick="document.getElementById('footer').scrollIntoView;"><label for="ep3" class="episode3"><h4>Now Playing</h4></label>
-					<input type="radio" id="ep4" name="borentine" onclick="document.getElementById('footer').scrollIntoView;"><label for="ep4" class="episode4"><h4>Now Playing</h4></label>
-					<input type="radio" id="ep5" name="borentine" onclick="document.getElementById('footer').scrollIntoView;"><label for="ep5" class="episode5"><h4>Now Playing</h4></label>
-					<input type="radio" id="ep6" name="borentine" onclick="document.getElementById('footer').scrollIntoView;"><label for="ep6" class="episode6"><h4>Now Playing</h4></label>
+					<input type="radio" id="ep1" name="borentine" onclick="document.getElementById('footer').scrollIntoView({behavior:'smooth'});"><label for="ep1" class="episode1"><h4>Now Playing</h4></label>
+					<input type="radio" id="ep2" name="borentine" onclick="document.getElementById('footer').scrollIntoView({behavior:'smooth'});"><label for="ep2" class="episode2"><h4>Now Playing</h4></label>
+					<input type="radio" id="ep3" name="borentine" onclick="document.getElementById('footer').scrollIntoView({behavior:'smooth'});"><label for="ep3" class="episode3"><h4>Now Playing</h4></label>
+					<input type="radio" id="ep4" name="borentine" onclick="document.getElementById('footer').scrollIntoView({behavior:'smooth'});"><label for="ep4" class="episode4"><h4>Now Playing</h4></label>
+					<input type="radio" id="ep5" name="borentine" onclick="document.getElementById('footer').scrollIntoView({behavior:'smooth'});"><label for="ep5" class="episode5"><h4>Now Playing</h4></label>
+					<input type="radio" id="ep6" name="borentine" onclick="document.getElementById('footer').scrollIntoView({behavior:'smooth'});"><label for="ep6" class="episode6"><h4>Now Playing</h4></label>
 					<br><br>
 					<iframe id="player1" src="https://anchor.fm/cetalksradio/embed/episodes/BORENTINE--Episode-1--RJ-Ann--CETALKS--College-Of-Engineering-Trivandrum-ed7s7s/a-a219ngk" class="player" height="102px" max-width="400px" frameborder="0" scrolling="no"></iframe>
 					<iframe id="player2" src="https://anchor.fm/cetalksradio/embed/episodes/BORENTINE--Episode-2--RJ-Anver--CETALKS--College-Of-Engineering-Trivandrum-ed7sfd/a-a219p33" class="player" height="102px" max-width="400px" frameborder="0" scrolling="no"></iframe>
