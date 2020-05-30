@@ -69,10 +69,9 @@ img {
 	padding: 0;
 	position: relative;
 	width: 100%;
-	background-image: linear-gradient(to right, #685d79, #615d7a, #595c7b, #505c7b, #475c7a);
 }
 #header div {
-	  margin: 0 auto;
+	margin: 0 auto;
     max-width: 940px;
     min-height: 140px;
     padding: 0 10px;
@@ -83,8 +82,8 @@ img {
 	height: 106px;
 	align-self: center;
 	margin: 20px 0 0 -80px;
-   padding: 0;
-   width: 320px;
+    padding: 0;
+    width: 320px;
 }
 #header div a.logo img {
 	display: block;
@@ -111,8 +110,8 @@ img {
 }
 #header div ul li a {
 	color: #ffffff;
-	font-family: 'Roboto', sans-serif;
-	font-size: 15px;
+	font-family: "Arial Black";
+	font-size: 14px;
 	font-weight: normal;
 	line-height: 14px;
 	margin: 0;
@@ -135,9 +134,12 @@ img {
 	display: none;
 }
 /*----------------------------------------body-home-styles---------------------------------------*/
-#body {	
-  background-image: radial-gradient(circle, #fcbb6d, #f7a772, #ed9577, #de867d, #ca7981, #ba7286, #a86c88, #956788, #826589, #6d6287, #595f82, #475c7a);
-	background-position: center;
+#body {
+	background: url(../images/mixerbg.jpg) no-repeat center top;
+	background-position: bottom;
+	background-attachment: fixed;
+	background-size: 150%;
+	border-top: 2px solid #252525;
 	margin: 0;
 	overflow: hidden;
 	padding: 0;
@@ -172,7 +174,7 @@ img {
 	text-align: center;
 	text-transform: none;
 	width: 89.5833%;
-	/*! text-shadow: black 2px 2px 15px; */
+	text-shadow: black 2px 2px 15px;
 }
 #body.home div.header div h2 {
 	background: none;
@@ -236,7 +238,7 @@ img {
 	width: 97.9167%;
 }
 #body.home div.body {
-	
+	background: url(../images/bar.png) repeat;
 	margin: 0;
 	padding: 0;
 	width: 100%;
@@ -252,7 +254,7 @@ img {
 #body.home div.body div h1 {
 	background: url(../images/bg-border1.gif) no-repeat center bottom;
 	color: #FFFFFF;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Arial Black';
 	font-size: 40px;
 	font-weight: normal;
 	line-height: 40px;
@@ -265,9 +267,8 @@ img {
 	background: url(../images/bg-border1.gif) no-repeat center bottom;
 	color: #FFFFFF;
 	display: block;
-	font-family: 'Roboto', sans-serif;
+	font-family: Arial;
 	font-size: 25px;
-	font-style: italic;
 	font-weight: normal;
 	letter-spacing: 0.05em;
 	line-height: 48px;
@@ -719,9 +720,9 @@ body div#page div.home div.header div#playbutton input.playradio+.label
 }
 body div#page div.home div.header div#playbutton input.playradio+.label img.play
 {
-	max-height: 200px;
+	max-height: 250px;
 	width: auto;
-	border: 1px transparent solid;
+	border: 3px transparent solid;
 	border-radius: 40%;
 }
 body div#page div.home div.header div#playbutton input.playradio+.label img.play:hover
@@ -776,7 +777,7 @@ body div#page div.home div.equalizer
 
 /*----------------------------------------footer-styles---------------------------------------*/
 #footer {
-	 background-image: linear-gradient(to top, #2f4f4f, #445a60, #5b666d, #707277, #808080);
+	background-color: #111111;
 	margin: 0;
 	min-height: 122px;
 	padding: 0;
@@ -791,12 +792,12 @@ body div#page div.home div.equalizer
 #footer div p {
 	color: #FFFFFF;
 	float: left;
-	font-family: 'Roboto', sans-serif;
-	font-size: 17px;
+	font-family: Arial;
+	font-size: 15px;
 	font-weight: normal;
 	line-height: 15px;
 	margin: 0;
-	padding: 5px 2 0;
+	padding: 5px 0 0;
 	text-align: left;
 	text-transform: none;
 	width: 400px;

@@ -174,10 +174,11 @@ img {
 	width: 95%;
 }
 #body.home div.header div h1 {
+	font-family: Arial;
+	font-size: 48px;
 	font-weight: bold;
 	line-height: 48px;
 	width: 99%;
-	font-size: 60px;
 }
 #body.home div.header div span {
 	width: 85%;
@@ -189,8 +190,8 @@ img {
 	width: 36%;
 }
 #body.home div.body div h1 {
-	font-family: 'Roboto', sans-serif;
-	font-size: 30px;
+	font-family: Arial;
+	font-size: 50px;
 	font-weight: bold;
 }
 #body.home div.body div p {
@@ -222,9 +223,6 @@ img {
 	font-weight: bold;
 	line-height: 35px;
 }
-	#body.home div.header div h2{
-		font-size: 30px;
-	}
 #body div img {
 	width: 90%;
 }
