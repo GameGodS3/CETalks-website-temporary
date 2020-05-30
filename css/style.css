@@ -196,6 +196,7 @@ img {
 	text-align: center;
 	text-transform: uppercase;
 	width: 89.5833%;
+	margin-bottom: 2px;
 }
 #body.home div.header div span {
 	display: block;
@@ -732,6 +733,13 @@ body div#page div.home div.header div#playbutton input.playradio+.label img.play
 	border: 3px transparent solid;
 	border-radius: 40%;
 }
+@media only screen and (max-width: 767px){
+	body div#page div.home div.header div#playbutton input.playradio+.label img.play
+{
+	max-height: 200px;
+}
+}
+
 body div#page div.home div.header div#playbutton input.playradio+.label img.play:hover
 {
 	border: 3px #c9cc00 dashed;
@@ -754,6 +762,12 @@ body div#page div.home div.header div#playbutton input.pauseradio+.label img.pau
 	width: auto;
 	border: 3px transparent solid;
 	border-radius: 40%;
+}
+@media only screen and (max-width: 767px){
+	body div#page div.home div.header div#playbutton input.pauseradio+.label img.pause
+{
+	max-height: 200px;
+}
 }
 body div#page div.home div.header div#playbutton input.pauseradio+.label img.pause:hover
 {
