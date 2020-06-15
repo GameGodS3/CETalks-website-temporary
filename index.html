@@ -14,7 +14,16 @@
 	<div class="loader-wrapper">
 		<span class="loader"><span class="loader-inner"></span></span>
 	</div>
-
+	<div id="modal">
+		<div id="pop-up">
+			<div id="pic">
+				<p id="demo"></p>
+			</div>
+			<span class="close">&times;</span>
+			
+		</div>
+	</div>
+	
 	<div id="page">
 		<div id="header">
 			<div id="navigation">
@@ -58,9 +67,6 @@
 							</li>
 						</ul>
 					</li>
-					<!--li>
-						<a href="contact.html">Contact</a>
-					</li-->
 				</ul>
 			</div>
 		</div>
@@ -104,11 +110,38 @@
 			</div>
 		</div>
 	</div>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script>
-        $(window).on("load",function(){
-          $(".loader-wrapper").fadeOut("slow");
-        });
-    </script>
+		var modal = document.getElementById('pop-up');
+		var span = document.getElementsByClassName('close')[0];
+		span.onclick = function(){
+			document.getElementById('pic').setAttribute('class', 'pop-off');
+			span.style.display = 'none';
+		}
+		window.onclick = function(event){
+			if (event.target == modal) {
+				document.getElementById('pic').setAttribute('class', 'pop-off');
+				span.style.display = 'none';				
+			}
+		}
+
+		/*countdown timer*/
+
+		var limittime =  new Date("Jan 15, 2020 22:00:00").getTime();
+		var x = setInterval(function(){
+			var now = new Date().getTime()
+			var distance = limittime - now;
+			var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+			var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+			var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+			var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+			document.getElementById('demo').innerHTML = hours + "h " + minutes + "m " + seconds + "s ";
+			
+			if (distance <= 0) {
+				clearInterval(x)
+				document.getElementById('demo').innerHTML = "Now Playing"
+			}
+		}, 1000);
+	</script>
 </body>
 </html>

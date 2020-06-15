@@ -21,7 +21,82 @@ a:active {
 img {
 	border: none;
 }
+/*-----------------------------------------pop-up-screen--------------------------------------*/
+#modal{
+	position: fixed;
+	z-index: 5;
+	height: 100%;
+	display: none;
+	align-items: center;
+}
+#pop-up 
+{
+	margin:  auto;
+}
+div#pic
+{
+	background: url(../images/borentine/1.jpg) no-repeat #5a5a5a;
+	background-blend-mode: soft-light;
+	opacity: .8;
+	display: inline-flex;
+	background-size: contain;
+	height: 19vw;
+	width: 15vw;
+	margin-left: 0;
+}
+@media only screen and (max-width: 568px){
+	div#pic
+{
+	background: url(../images/borentine/2.jpg) no-repeat #414141;
+	background-blend-mode: soft-light;
+	opacity: .8;
+	display: inline-flex;
+	background-size: contain;
+	height: 40vw;
+	width: 30vw;
+	margin-left: 0;
+}
+}
+#demo
+{
+	color: white;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	text-shadow: 3px 3px 4px black;
+	font-size: 20px;
+	font-weight: bold;
+	display: flex;
+	margin: auto auto;
+	align-items: center;
+}
 
+@keyframes pop-off{
+	from {margin-left: 0;}
+	to {margin-left: -30vw;}
+}
+.pop-off
+{
+	animation: pop-off 2s forwards;
+}
+.close
+{
+	position: absolute;
+	right: 0;
+	padding: 0 10px;
+	color: black;
+	background-color: white;
+	float: right;
+	font-size: 36px;
+	font-weight: bold;
+	z-index: 7;
+}
+
+.close:hover,
+.close:focus
+{
+	color: #aaa;
+	text-decoration: none;
+	cursor: pointer;
+}
 /*----------------------------------------loading-screen--------------------------------------*/
 .loader-wrapper {
 	width: 100%;
