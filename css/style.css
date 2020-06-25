@@ -26,7 +26,7 @@ img {
 	position: fixed;
 	z-index: 5;
 	height: 100%;
-	display: none;
+	display: flex;
 	align-items: center;
 }
 #pop-up 
@@ -35,7 +35,7 @@ img {
 }
 div#pic
 {
-	background: url(../images/borentine/1.jpg) no-repeat #5a5a5a;
+	background: url(../images/today.jpg) no-repeat #5a5a5a;
 	background-blend-mode: soft-light;
 	opacity: .8;
 	display: inline-flex;
@@ -47,7 +47,7 @@ div#pic
 @media only screen and (max-width: 568px){
 	div#pic
 {
-	background: url(../images/borentine/2.jpg) no-repeat #414141;
+	background: url(../images/today.jpg) no-repeat #414141;
 	background-blend-mode: soft-light;
 	opacity: .8;
 	display: inline-flex;
