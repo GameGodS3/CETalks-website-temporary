@@ -137,14 +137,13 @@
 
 			document.getElementById('demo').innerHTML = hours + "h " + minutes + "m " + seconds + "s ";
 			
-			if (hours <= -1) {
-				document.getElementById('modal').setAttribute('style', 'display:none');
-			}
 			if (distance <= 0) {
 				clearInterval(x)
 				document.getElementById('demo').innerHTML = "Now Playing"
 			}
-			
+			if (distance <= -1) {
+				document.getElementById('modal').setAttribute('style', 'display:none');
+			}
 		}, 1000);
 	</script>
 </body>
